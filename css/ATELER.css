@@ -1,15 +1,10 @@
-.fast_nav{
-
-
-}
 
 .header{
     margin: 2px；
-    line-height:20px;
+    line-height；20px;
     height:20px;
     padding-left: 320px;
-    padding-right: 350px;
-    
+    padding-right: 350px;   
 }
 
 .siteName {
@@ -35,16 +30,12 @@
     background-color: rgba(241, 234, 234, 0.747)
 }
 
-.hole{
-    
-
-
-}
 
 .main{
-width: 560px;
-height: 1500px;
-padding-right: 300px;
+    float: right;
+    width: 560px;
+    height: 1500px;
+    padding-right: 300px;
 }
 
 .sNav {
@@ -59,12 +50,6 @@ padding-right: 300px;
     line-height: 35px; 
 }
 
-.main {
-    float: right;
-    width:660px;
-    height:370px；
-    padding-right:300px;  
-}
 
 .entry-content{
     width: 550px;
@@ -122,4 +107,5 @@ padding-right: 300px;
  font-size: 20px;
  font-family: Arial, Helvetica, sans-serif;
  background-color: darkgray;
- color: aliceblue;
+    color: aliceblue;
+}
