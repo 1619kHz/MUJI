@@ -262,6 +262,11 @@
   .aside .picture img{
     border: 1px solid #cccccc;
   }
+  .bodyfooter{
+    font-size: 12px;
+    line-height: 1.5;
+    height: 101px;
+  }
   .footer{
     line-height: 16px;
   }
