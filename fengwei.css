@@ -92,21 +92,11 @@ html {
     color: rgb(8, 0, 0);
     line-height: 6em;
 }
-/* 插食谱图 */
-.title03_nav> .wrapper::after{
-  content: "";
-  display: block; 
-  clear: both;
-}
-.title03_nav .nav {
-  float: left;
-  line-height: 6em;
-  } 
-  
-  .title03_nav .shipu {
-  float: right;
-  line-height: 6em;    
-}
+/* 插入食谱图 */
+.title03_nav .nav>li>p {
+    float: left;
+    margin: 0 0 5px 25px;
+  }
 /* 标题4 */
 .title04_nav .nav>li{
     font-weight:bold;	
@@ -123,9 +113,19 @@ html {
     color: rgb(8, 0, 0);
     line-height: 6em;
 }
-.h2_nav .nav>li{
-    font-size:20px; 	
-    color: rgb(8, 0, 0);
-    line-height: 1.6;
-    width:850px; 
-}
+/* 插入人物图 */
+.title05_nav> .wrapper::after{
+    content: "";
+    display: block; 
+    clear: both;
+  }
+  .title05_nav .nav {
+    float: left;
+    line-height: 6em;
+    } 
+    
+    .title05_nav .shipu {
+    float: right;
+    line-height: 6em;    
+  }
+
