@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+#storeHeader a {text-decoration: none;}
+
+#shStoreMember {float: left; position: relative; margin-left: 0;}
+#shStoreNav {float: left; position: relative;}
+#shStoreMember a, #shStoreNav a {display: block;}
+
+#shStoreMember ul:after {content: ""; display: block; clear: both;}
+#shStoreMember li {float: left;}
+#shStoreMember a, #shStoreNav a {line-height: 32px; padding: 0 15px 0 0;}
+#shLogin {font-weight: bold;}
+#smLogout {padding: 0; }
+
+#hSearch:after {content: ""; display: block; clear: both;}
+#hSearch {clear: both;}
+#hSearch #searchArea {border: solid #bbb; border-width: 1px 0 1px 1px; position: relative; border-radius: 3px 0 0 3px;}
+#hSearch #hSearchWrap div {display: inline-block; *display: inline; *zoom: 1;}
+#searchKeyword input {border: 0; height: 23px; width: 280px; padding: 0 5px; font-size: 13px; position: relative; z-index: 2; outline: 0; -webkit-appearance: none; line-height: 23px; margin-top: 3px; background: #ffffff;}
+#searchKeyword .placeholder {color: #aaa;}
+#searchCategory select {
+opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "alpha(opacity=0)";
+border: 0; cursor: pointer; position: absolute; left: 0; top: 0; height: 100%; *height: auto; min-width: 98px; margin: 0; width: 98px;
+	-webkit-appearance:button;
+	-moz-appearance:button;
+	appearance:button;
+}
+#scatWrap {border-right: 1px solid #e5e5e5; height: 28px; padding: 0 5px; display: inline-block; background: #f7f7f7; vertical-align: top; line-height: 28px; *background: url(http://img.muji.com.cn/img/store/top/icon_openclose.png) 95% 12px no-repeat #f7f7f7; *padding: 0 15px 0 5px; text-align: center; min-width: 98px;}
+#scatWrap:after {content: ""; display: inline-block; width: 12px; height: 30px; background: url(http://img.muji.com.cn/img/store/top/icon_openclose.png) right 12px no-repeat; vertical-align: middle;}
+#searchSubmit {vertical-align: top;}
+#searchSubmit a {display: block; width: 40px; height: 30px; background: url(http://img.muji.com.cn/img/store/common/icon_search.png) no-repeat #515151 center center; text-indent: -9999px; border-radius: 0 3px 3px 0; margin: 0; padding: 0;}
+#searchSubmit a:hover {background: url(http://img.muji.com.cn/img/store/common/icon_search.png) no-repeat #7f0019 center center;}
+
+
+#footer #snCategory, #footer #mobileNav {display:none;}
+
+
+#misc .instagram a img {height: 31px; margin-left: 3px;}
+#misc .fLicence a img {
+        height: 45px; 
+        position: absolute;
+        right: 11%;
+        bottom: 20px;
+}

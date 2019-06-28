@@ -1,0 +1,139 @@
+.mobileOnly {display: none;}
+
+#header,
+.content,
+#footer {width: 740px; padding: 0;}
+#headerWrap {min-width: 740px;}
+small {vertical-align: top;}
+
+#siteName {padding-left: 0;}
+#globalNav li#gnGS {padding-right: 0;}
+#tag {font-size: 20px; margin-bottom: 20px;}
+.content {font-size: 14px; line-height: 1.6;}
+.content #main {width: 740px;}
+section {margin-bottom: 60px;}
+section section {margin: 30px 0; /*padding-top: 30px; border-top: 1px solid #e6e6e6;*/}
+section h1 {font-size: 30px; margin-bottom: 20px; font-weight: bold;}
+section section h1 {font-size: 16px; margin-bottom: 15px;}
+#logo {margin-bottom: 15px;}
+#feature, #feature2 {position: relative;}
+#vis-feat {position: absolute; right: 0; top: 0;}
+#vis-feat2 {position: absolute; right: 0; top: 10px;}
+#vis-feat {width: 142px;}
+#vis-feat2 {width: 221px;}
+#feature1 h1, #feature1 p {margin-right: 200px;}
+#aboutMiles,
+#guide {border: 1px solid #e6e6e6; padding: 15px; border-radius: 5px; font-size: 12px;}
+#aboutMiles li {text-indent: -1em; margin-left: 1.5em; margin-bottom: 10px;}
+#aboutMiles li li {text-indent: 0; list-style: disc;}
+#aboutMiles li:before {content: '■';}
+#aboutMiles li li:before {content: '';}
+#aboutMiles h1 {font-size: 14px;}
+
+.desc {overflow: hidden;}
+
+#topLink {text-align: center; margin-top: 30px;}
+#topLink ul {display: inline-block;}
+#topLink li {float: left;}
+#topLink li.passport {border-right: 1px solid #333; padding-right: 15px; margin-right: 15px;}
+#passport .passport a, #mile .mile a {cursor: default; pointer-events: none; text-decoration: none; font-weight: bold;}
+
+#intro .title {background-color: #f5f5f5; margin: 30px 0; text-align: center; padding: 40px 0 30px;}
+#intro .lead {width: 540px; float: left;}
+#intro .desc {overflow: hidden; float: right; width: 160px;}
+#intro .desc li.appStore {margin-bottom: 10px;}
+
+#howto:after,
+#sums:after,
+#featureList:after,
+#topLink:after {content: ""; clear: both; display: block;}
+#howto figure,
+#sums figure {float: left; margin-right: 20px; width: 340px;}
+#howto section,
+#sums section,
+#guide section {margin-top: 0; padding-top: 0; border: 0;}
+#howto section h1,
+#sums section h1,
+#guide {font-size: 14px;}
+#guide section {margin-bottom: 0;}
+#guide h1 {font-size: 16px; margin-bottom: 10px;}
+#guide figure {margin-bottom: 30px; text-align: center;}
+#guide li {margin-bottom: 10px;}
+#guide img {width: 160px; margin: 5px 10px; vertical-align: top;}
+#guide img#vis-guide-img01 {width: 250px;}
+/* #guide #vis-guide-img02 {margin-top: 0;} */
+
+.content p {margin-bottom: 1em;}
+#promo {border: 1px solid #ccc; padding: 5px; font-size: 12px; font-weight: bold; display: inline-block; margin-bottom: 20px;}
+#promo p {margin-bottom: 0;}
+#promo p.note {font-weight: normal;}
+#storeLink {margin-bottom: 10px;}
+#storeLink li {display: inline-block; vertical-align: middle;}
+.note {font-size: 11px;}
+.annotation {font-size: 12px;}
+
+#faq {border: solid #ccc; border-width: 1px 0; padding: 10px 0; margin-top: 50px;}
+
+#sns {margin: 30px auto;}
+#sns li {float: left; margin-right: 10px;}
+#sns li.tw {width: 100px;}
+#sns li.fb iframe {width: 115px !important;}
+
+aside#mujicard {border: 1px solid #7F0019; display: block; text-decoration: none; text-align: center;}
+aside#mujicard h1 {color: #fff; background: #7F0019; text-align: center; font-size: 18px; padding: 5px;}
+aside#mujicard .date {font-size: 16px; font-weight: bold;}
+aside#mujicard div {padding: 10px 0;}
+aside#mujicard .benefit {font-weight: bold;}
+aside#mujicard p {padding: 0 10px;}
+aside#mujicard {position: relative; width:99% ; min-height:250px; margin:0;}
+aside#mujicard .linkarea {margin:0; padding:0;}
+aside#mujicard .linkarea a {
+ display: block ;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ text-indent:-999px;
+ background/*\**/: #fff\9; /*IE7、8用ハック*/
+ filter:alpha(opacity=0); /*フィルターで透明に*/
+}
+aside#mujicard .linkarea .linktext {text-decoration: underline;}
+
+
+table.horizontal {margin-bottom: 20px;}
+table.horizontal th {padding: 5px 10px; background: #f5f5f5; text-align: center; font-weight: bold; border: solid #ddd; border-width: 1px 1px 0;}
+table.horizontal td {padding: 10px; border: solid #ddd; border-width: 0 1px 1px;}
+table.horizontal td.point,
+table.horizontal td.mile {white-space: nowrap; text-align: center; font-size: 11px;}
+table.horizontal .mile .num,
+table.horizontal .point .num {font-size: 16px; font-weight: bold; margin: 0 2px; font-family: "Helvetica","Lucida Grande","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W6","ＭＳ Ｐゴシック" ,sans-serif;}
+.relatedLink {text-align:right;}
+.relatedLink a {display: inline-block; background: url(/img/common/arrow_right.png) no-repeat 14px 50%; border: 1px solid #ccc; padding: 7px 14px 7px 28px; text-decoration: none; font-weight: bold;}
+.relatedLink a:hover {border: 1px solid #7F0019;}
+
+#feature > h1, #howto > h1, #sums > h1 {border-top: 1px solid #e6e6e6; padding-top: 20px;}
+
+#howto img, #sums img {width: 320px;}
+
+#feature1 .relatedLink {margin-top: 20px;}
+#feature1 th.stage,
+#feature1 th.point,
+#feature1 th.mile {border: solid #ddd; border-width: 1px 1px 1px;}
+#feature1 table.horizontal.mobileOnly th {padding: 5px;}
+
+section.save h1 {text-align: center;}
+
+.gr {border: 1px solid #e6e6e6; background-color: #f7f7f7; padding: 15px;}
+
+.box {width: 33.3%; float: left; box-sizing: border-box;}
+section#featureList section {padding: 15px;}
+section#featureList {margin: 30px -15px 0;}
+#featureList h1 {text-align: center;}
+#featureList img {display: block; margin: 15px auto;}
+#feature3 img, #feature4 img, #feature6 img {width: 50%;}
+#feature5 img, #feature7 img {width: 30%;}
+
+#featureList section {padding-top: 30px; margin-bottom: 0; margin-top: 0;}
+
+
