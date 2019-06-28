@@ -58,7 +58,7 @@ html {
     padding: 0 10px;
     line-height: 4em;
 }
-/* 一级标题 */
+/* 标题1 */
 .title01_nav .nav>ul{
     font-weight:bold;	
     font-size:30px; 
@@ -71,8 +71,46 @@ html {
     color: #999;
 }
 .h1_nav .nav>p{
-    line-height:30px; 
+    line-height:1.6; 
     font-size:20px; 
     color:rgb(8, 0, 0);
     width:850px;
+}
+/* 标题2 */
+.title02_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;	
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+/* 标题3 */
+.title03_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;	
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+/* 标题4 */
+.title04_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+/* 标题5 */
+.title05_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;	
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+.h2_nav .nav>li{
+    font-size:20px; 	
+    color: rgb(8, 0, 0);
+    line-height: 1.6;
+    width:850px; 
 }
