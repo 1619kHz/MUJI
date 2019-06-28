@@ -1,0 +1,53 @@
+
+        #chatBanner {
+            position: fixed;
+            left: 0;
+            bottom: 30px;
+            width: 100%;
+            display: none;
+        }
+
+            #chatBanner p {
+                display: block;
+                height: 0;
+                margin: auto;
+                position: relative;
+                width: 880px;
+            }
+
+            #chatBanner span {
+                background: #666666;
+                border-radius: 4px 4px 0 0;
+                color: #FFFFFF;
+                display: block;
+                line-height: 1.6;
+                margin: 0 -108px 0 auto;
+                text-decoration: none;
+                width: 94px;
+            }
+
+                #chatBanner span:hover {
+                    background: #333333;
+                }
+
+                #chatBanner span a {
+                    background: url("//img.muji.com.cn/img/cn/store/common/chat_icon.png") no-repeat 10px 9px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    font-weight: bold;
+                    display: block;
+                    padding: 5px 10px 7px 32px;
+                }
+
+        /* License */
+        #footer:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #fLicence {
+            float: right;
+            margin: 5px 0 10px;
+        }
+    
