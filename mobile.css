@@ -1,0 +1,140 @@
+@charset "utf-8";
+body {
+line-height: 1.5;
+-webkit-text-size-adjust: none;
+}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+
+img {vertical-align: top;}
+
+#pageEnd:after {content: "."; display: block; visibility: hidden; clear: both; height: 0; font-size: 0; line-height: 0;}
+
+
+#header,
+#headerWrap,
+.content,
+#footer,
+#footerWrap {width: 100%; margin: 0 auto; padding: 0; overflow: hidden;}
+#headerWrap {min-width:100%;}
+
+.content {position: relative; width: auto; padding: 0 10px;}
+.content #main {width: auto;}
+
+
+#headerWrap {height: auto;}
+#header {height: 40px;}
+#siteName {padding: 0;}
+#siteName a {width: 76px; height: 40px; margin-left:10px; background: url(http://www.muji.com/cn/passport/mile/images/header.png) no-repeat left top; -webkit-background-size: 76px 40px;}
+#siteName a:hover {background: url(http://www.muji.com/cn/passport/mile/images/header.png) no-repeat left top; padding-top: 0; margin-top: 0;}
+#globalNav {height: auto;}
+#globalNav li {padding:0;}
+#globalNav a {display: block; background: none; text-indent: 0; height: auto; padding: 13px 10px 0; font-size: 13px; font-weight: bold;}
+#gnShop a { width: auto;}
+#gnHome,
+#gnStore,
+#gnLab,
+#gnMymuji,
+#gnContact,
+#gnGS {display: none;}
+
+
+
+#main {width: auto; margin: 10px 0 0; min-height: auto;}
+body #main h1 {font-size: 14px; font-weight: bold; padding: 5px 10px; margin: 0; text-indent: 0; border-bottom: 0; background: none; text-indent: 0;}
+
+.mobileOnly {display: block;}
+.pcOnly {display: none;}
+
+section {margin-bottom: 30px;}
+section section {margin: 20px 0; padding-top: 20px;}
+section section#feature1 {margin-top: 0; padding-top: 0;}
+
+#passport .mile a, #mile .passport a {text-decoration: underline;}
+
+#intro #tag {font-size: 12px; font-weight: bold; margin: 10px 0; text-align: center;}
+#intro {text-align: center;}
+#intro .desc li.appStore {margin-bottom: 0;}
+#intro .lead {width: 100%;}
+
+#intro .title {padding: 20px 0;}
+
+#passport #logo img {width: 70%;}
+#passport #top-vis {width: 80%; float: none; margin: 10px 0;}
+#intro p {text-align: left;}
+#intro #promo p {text-align: center;}
+#movie {text-align: center;}
+#movie iframe {width: 300px; height: 168px;}
+#vis-feat {position: static; display: block; margin: 0 auto 20px;}
+#feature1 h1, #feature1 p, #feature2 > h1, #feature2 > p {margin-right: 0;}
+#feature2 section a {text-decoration: underline;}
+body #main section h1 {font-size: 20px; padding: 0;}
+body #main section#sums > h1,
+body #main section#feature > h1,
+body #main section#howto > h1 {padding: 15px 0;}
+
+body #main section section h1 {font-size: 14px; margin-bottom: 5px;}
+
+#howto section, #howto section {border-top: 1px solid #e6e6e6; margin-top: 20px; padding-top: 20px;}
+
+#howto figure,
+#sums figure {float: none; width: auto; text-align: center; margin: 20px 0;}
+#howto img,
+#sums img {width: 80%;}
+
+body #main section#guide h1 {font-size: 14px; margin-bottom: 10px;}
+
+.box {width: 100%; float: none;}
+
+#guide figure {text-align: center;}
+#guide img {width: 138px; margin-bottom: 10px;}
+
+#mujicard p {text-align: center;}
+#mujicard img.mobileOnly {border: 1px solid #9C2239; display: inline;}
+aside#mujicard {min-height: 185px;}
+
+#faq {padding: 0; margin-top: 30px;}
+#faq a {display: block; text-align: center; padding: 10px 0;}
+
+aside#mujicard img {width: 75%;}
+aside#mujicard h1 {display: block; background: #7F0019;}
+aside#mujicard div {padding: 10px;}
+
+#intro .desc {float: none; width: 100%;}
+
+#vis-feat2 {position: static; display: block; margin: 0 auto;}
+
+#feature3 img, #feature4 img, #feature6 img {width: 30%;}
+#feature5 img, #feature7 img {width: 20%;}
+
+section#featureList {margin-top: 0;}
+section#featureList section#feature3 {padding-top: 0;}
+
+
+/* mile */
+#mile #logo img {width: 70%;}
+#mile #intro h1 {position: static;}
+#mile #top-vis {width: 90%; float: none; margin: 15px auto 0;}
+
+body#mile #main section#service h1 {font-size: 20px; padding-bottom: 15px;}
+
+#accumulateList section {width: 100%; border-top: 1px solid #e6e6e6;}
+#accumulateList section:first-child {border-top: 0;}
+#accumulateList img {width: 50%;}
+
+#accumulate a {text-decoration: underline;}
+
+#accumulate4 img, #accumulate5 img {position: static; display: block; margin: 0 auto;}
+#accumulate4 > h1, #accumulate4 > p, #accumulate5 > h1, #accumulate5 > p {margin-right: 0;}
+
+
+
+#footer {margin-top: 20px;}
+
+#storeFooterWrap,
+#footerNav {display: none;}
+
+#pageEnd {padding: 0 10px;}
+#copyright {margin-bottom: 0; text-align: center;}
+
