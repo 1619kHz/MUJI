@@ -252,9 +252,7 @@
     padding: 0;
     border: 0;
   }
-  li{
-    list-style: none;
-  }
+
   .aside .data{
     font-size: 11px;
     color: #999;
