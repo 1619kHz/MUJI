@@ -92,6 +92,21 @@ html {
     color: rgb(8, 0, 0);
     line-height: 6em;
 }
+/* 插食谱图 */
+.title03_nav> .wrapper::after{
+  content: "";
+  display: block; 
+  clear: both;
+}
+.title03_nav .nav {
+  float: left;
+  line-height: 6em;
+  } 
+  
+  .title03_nav .shipu {
+  float: right;
+  line-height: 6em;    
+}
 /* 标题4 */
 .title04_nav .nav>li{
     font-weight:bold;	
