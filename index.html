@@ -59,6 +59,19 @@ width: 200px;
 margin-right: 0px;}
 .ccc > li:nth-child(6n){margin-right: 0;}
 
+.zzz::after{content: "";
+display: block;}
+.zzz > li{float: left;
+width: 200px;
+margin-right: 0px;}
+.zzz > li:nth-child(3n){margin-right: 0;}
+
+.rrr::after{content: "";
+display: block;}
+.rrr > li{float: left;
+width: 200px;
+margin-right: 0px;}
+.rrr > li:nth-child(3n){margin-right: 0;}
 </style>
 </head>
 <body>
@@ -175,6 +188,7 @@ margin-right: 0px;}
         </section>
         <section id="lab">
             <h1>活动一览</h1>
+            <br>
             <div class="more"><a href="">更多</a></div>
             <div class="wrap">
                 <ul class="zzz">
@@ -186,9 +200,10 @@ margin-right: 0px;}
         </section>
         <section id="event">
             <h1>宣传视频</h1>
+            <br>
             <div class="more"><a href="">更多</a></div>
             <div class="wrap">
-                <ul>
+                <ul class="rrr">
                     <li><a href=""><img src=""><span class="title">無印良品深圳机场公共空间</span></a></li>
                     <li><a href=""><img src=""><span class="title">服装搭配咨询服务</span></a></li>
                     <li><a href=""><img src=""><span class="title">T恤</span></a></li>
