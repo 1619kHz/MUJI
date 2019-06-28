@@ -192,11 +192,10 @@
     font-size: 12px;
     line-height: 1.5;
   }
-  .category{ 
-    background-image: url(https://www.muji.net/lab/theme_illust_s_living.png)
-  }
+
   .category
   {
+    background-image: url(https://www.muji.net/lab/theme_illust_s_living.png)
     display: block;
     width: 133px;
     height: 133px;
