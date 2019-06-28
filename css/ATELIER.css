@@ -1,0 +1,125 @@
+.fast_nav{
+
+
+}
+
+.header{
+    margin: 2px；
+    line-height:20px;
+    height:20px;
+    padding-left: 320px;
+    padding-right: 350px;
+    
+}
+
+.siteName {
+ float: left;
+ font-size: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+ line-height: 1;
+ height: 20px;
+ width: 130px;
+ font-style: unset;
+}
+.globalNav {
+    float: right; 
+    font-size: 12px; 
+    margin-right: 8px;
+    word-spacing: 8px;
+    color: #666;
+}
+
+.content{
+    width: 1500PX;
+    height:1100PX;
+    background-color: rgba(241, 234, 234, 0.747)
+}
+
+.hole{
+    
+
+
+}
+
+.main{
+width: 560px;
+height: 1500px;
+padding-right: 300px;
+}
+
+.sNav {
+    float: left;
+    width: 170px;
+    height: 400px;
+    padding-left: 300px;
+    padding-top: 50px;
+    font-family: Arial;
+    color: #666;
+    text-align: left;
+    line-height: 35px; 
+}
+
+.main {
+    float: right;
+    width:660px;
+    height:370px；
+    padding-right:300px;  
+}
+
+.entry-content{
+    width: 550px;
+    font-size: 14px;
+    line-height: 2.0;
+}
+
+.logo{
+    font-weight: 900;
+    text-align: center;
+    height: 170px;
+    width: 100px;
+    font-size: 30px;
+    padding-bottom: 2cm;
+
+}
+
+.section1{
+    line-height: 1.6;
+    padding-left:1px;
+    margin-top: 1cm;
+}
+
+.forPress{
+    padding-top: 2.5em;
+}
+
+
+.picture{
+    width: 550px;
+    height: 400px;
+}
+
+.maintitle{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    padding-bottom: 1.5em;
+    color: #666;
+}
+
+.schedule{
+    line-height: 2.0;
+    margin-bottom: 60px;
+    width: 550px;
+    padding-bottom: 2em;
+    list-style: none;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.Exhib{
+ width: 110px;
+ height: 40px;   
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: darkgray;
+ color: aliceblue;
