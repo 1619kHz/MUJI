@@ -1,0 +1,77 @@
+/* 重置样式 */
+html {
+    font-size: 14px;
+    color: #333333;
+  }
+  body {
+    margin: 0;
+  }
+  ul,h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /* 快捷导航 */ 
+  .fast_nav{
+      border-bottom: 1px solid #b3b1b3;
+  }
+  .fast_nav> .wrapper::after{
+    content: "";
+    display: block; 
+    clear: both;
+  }
+    .fast_nav .logo {
+    float: left;
+    line-height: 4em;
+    } 
+    
+    .fast_nav .other {
+    float: right;
+    line-height: 4em;    
+  }
+  .fast_nav .other>span{
+      padding: 0 10px;
+  }
+   /* 顶部导航 */  
+   .top_nav{
+    border-bottom: 1px solid #b3b1b3;
+}  
+.top_nav> .wrapper::after{
+    content: "";
+    display: block; 
+    clear: both;
+  }
+.top_nav .nav>li{
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+    line-height: 4em;
+}
+/* 一级标题 */
+.title01_nav .nav>ul{
+    font-weight:bold;	
+    font-size:30px; 
+    list-style: none;
+}
+/* 时间 */
+.time_nav .nav>div{
+    list-style: none;
+    line-height: 4em; 
+    color: #999;
+}
+.h1_nav .nav>p{
+    line-height:30px; 
+    font-size:20px; 
+    color:rgb(8, 0, 0);
+}
