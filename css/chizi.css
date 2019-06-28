@@ -1,15 +1,10 @@
-.body{ 
-    margin: 0;
-  }
+
   .headerwrap {
       border-bottom: 1px solid #E6E6E6;
       background: #FFF;
+      width: 100%;
+      min-width: 910px;
     }
-  .headerwrap  {
-    width: 100%;
-    min-width: 910px;
-
-  }
   .header {
     width: 910px;
     margin: 0 auto;
@@ -33,16 +28,13 @@
     float: right;
     font-size: 12px;
     margin-right: 8px;
+    line-height: 0px;
+    display: block;
   }
   
   .globalNav li {
     float: left;
     cursor: pointer;
-  }
-  .globalNav{
-    line-height: 0px;
-    display: block;
-    font-size: 12px;
   }
   .globalNav .gnHome{
     line-height: 1.5;
@@ -91,7 +83,10 @@
   .main {
     width: 880px;
     height: 6713.3px;
-    margin-top: 0;
+    margin: 0 auto;
+    margin-top: 24px;
+    overflow: hidden;
+    min-height: 250px;
   }
   .content-header{
     height: 96px;
@@ -108,27 +103,17 @@
     border-bottom: 1px solid #999;
   }
   
-  .main {
-    margin: 0 auto;
-        margin-top: 0px;
-    margin-top: 24px;
-    overflow: hidden;
-    min-height: 250px;
-  }
   .breadcrumbs ol {
     height: 19px;
   }
   .breadcrumbs li {
     float: left;
-    padding: 0 4px 0 0;
     font-size: 10px;
     line-height: 19px;
-    background: #FFF;
   }
   .breadcrumbs  li{
     display: block;
     padding: 0 12px 0 5px;
-    -moz-border-radius: 2px 0 0 2px;
     border-radius: 2px 0 0 2px;
     background: #DDD  no-repeat 100% 0;
   }
@@ -138,11 +123,10 @@
   }
   .entry-content{
     float: left;
-    width: 700px;  
+    width: 700px;
+    line-height: 1.6;   
   }
-  entry-content{
-    line-height: 1.6; 
-  }
+
   h1{
     font-size: 23px;
     font-weight: bold;
@@ -158,8 +142,10 @@
     color: #999;
   }
   .content-body{
-    font-size: 14px;
     margin-bottom: 20px;
+    font-size: 16px;
+    margin: 30px 0 20px;
+    font-weight: bold;
   }
   .entry-content p{
     padding-bottom: 20px;
@@ -171,11 +157,6 @@
     font-size: 16px;
     line-height: 1.6;
     margin: 30px 0 20px;
-  }
-  .content-body{
-    font-size: 16px;
-    margin: 30px 0 20px;
-    font-weight: bold;
   }
   img.chizi{
     float: right;
@@ -195,7 +176,10 @@
 
   .category
   {
-    background-image: url(https://www.muji.net/lab/theme_illust_s_living.png)
+    background-image: url(https://www.muji.net/lab/the_illust_s_living.png)
+  }
+  .category
+ {
     display: block;
     width: 133px;
     height: 133px;
