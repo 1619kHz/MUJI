@@ -98,6 +98,11 @@
     font-size: 12px;
     line-height: 1.6;
   }
+  .page-title{
+    height: 36.8px;
+    font-size: 23px;
+    line-height: 1.6;
+  }
   .breadcrumbs {
     padding-top: 0;
     border-bottom: 1px solid #999;
