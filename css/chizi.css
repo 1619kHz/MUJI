@@ -269,6 +269,7 @@
   }
   .footer{
     line-height: 16px;
+    height: 101px;
   }
   .content, .footer{
     width: 880px;
@@ -278,9 +279,16 @@
   .pageend1{
     margin-top: 30px;
     border-bottom: 1px solid #666;
+    line-height: 0;
+    font-size: 0px;
+    height: 26px;
   }
   .pageend1 .end1{
     float: left;
+    width: 108px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 1.5;
   }
   .pageend1 li{
     margin-bottom: 10px;
@@ -289,7 +297,37 @@
   .pageend1 .endtop{
     float: right;
     font-size: 100%;
+    width: 58px;
+    height: 16px;
+    line-height: 1.5;
+    font-size: 12px;
   }
   .endtop{
     text-align: right;
   }
+  .footerend{
+    margin: 10px 0;
+  }
+  .footerend li{
+    float: left;
+    margin-right: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #ccc;
+    line-height: 13px;
+  }
+  .bodyfooter .two img{
+    width: 18px;
+    height: 12px;
+    border: 1px solid #CCC;
+    margin-right: 5px;
+  }
+  .footerend  .two{
+    float: right;
+  }
+  .footerend .three{
+    float: right;
+  }
+  .footerend .four{
+    float: right;
+  }
+
