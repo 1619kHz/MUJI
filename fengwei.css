@@ -58,6 +58,18 @@ html {
     padding: 0 10px;
     line-height: 4em;
 }
+
+.title01_nav{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float:left;
+    margin-left:320px;
+}
+.time_nav{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float:left;
+}
 /* 标题1 */
 .title01_nav .nav>ul{
     font-weight:bold;	
@@ -129,3 +141,8 @@ html {
     line-height: 6em;    
   }
 
+.aside{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float: right;
+}
