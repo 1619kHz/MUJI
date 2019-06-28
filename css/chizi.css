@@ -93,6 +93,11 @@
     height: 6713.3px;
     margin-top: 0;
   }
+  .content-header{
+    height: 96px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
   .breadcrumbs {
     padding-top: 0;
     border-bottom: 1px solid #999;
