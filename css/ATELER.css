@@ -27,7 +27,7 @@
 .content{
     width: 1500PX;
     height:1100PX;
-    background-color: rgba(241, 234, 234, 0.747)
+    background-color: rgba(247, 241, 241, 0.747)
 }
 
 
@@ -111,8 +111,9 @@
 }
 
 .News{
-    padding-top: 35px;
-    background-color: rgb(230, 233, 236);
+    padding-top: 36px;
+    background-color: rgb(226, 226, 226);
+
 }
 
 .news{
@@ -122,7 +123,7 @@
 }
 
 .footer{
-    background-color: rgb(230, 230, 224);
+    background-color: rgb(255, 249, 249);
 }
 .pageEnd{
     word-spacing: 15px;
@@ -143,7 +144,7 @@
 }
 
 .copyright{
-    font-size: 12px;
+    font-size: 10px;
     word-spacing: 15px;
     color: #666;
     
