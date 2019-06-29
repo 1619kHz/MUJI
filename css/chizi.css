@@ -98,28 +98,28 @@
     font-size: 23px;
     line-height: 1.6;
   }
-  .breadcrumbs {
+  .xiaohang {
     padding-top: 0;
     border-bottom: 1px solid #999;
   }
   
-  .breadcrumbs ol {
+  .xiaohang ol {
     height: 19px;
   }
-  .breadcrumbs li {
+  .xiaohang li {
     float: left;
     font-size: 10px;
     line-height: 19px;
     cursor: pointer;
   }
-  .breadcrumbs  li{
+  .xiaohang  li{
     display: block;  
     padding: 0 12px 0 5px;
     border-radius: 2px 0 0 2px;
     background: #DDD  no-repeat 100% 0; 
 
   }
-  .breadcrumbs .current{
+  .xiaohang .current{
     color: #999;
     background-color: #FFF;
   }
