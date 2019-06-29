@@ -1,0 +1,933 @@
+@charset "utf-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:baseline;}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+
+
+body { color:#333; font: 12px/1.5 "Helvetica", 'Lucida Grande', "Microsoft YaHei", sans-serif;}
+
+a:link, a:visited {color: #333333;}
+a:hover {color: #7f0019;}
+a img {vertical-align: bottom;}
+a img.hoverImg  { border:1px solid #DDD7C7; }
+a:hover img.hoverImg  { border:1px solid #7f0019; }
+a.undecorated { text-decoration:none; }
+
+h1 { font-size: 28px; font-weight:bold; margin-bottom: 20px; padding-bottom:5px; font-family:"Helvetica","Lucida Grande","Microsoft YaHei","SimHei","STHeiti","sans-serif";}
+h2 { font-size: 14px; font-weight:bold; margin-bottom: 15px; margin-top:15px;}
+p,ul{ margin-bottom: 10px; }
+
+.errorMsgBox,.infoMsgBox { padding:7px; background-color:#ffe7e7; color:red; font-weight:bold; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; behavior:url(/cn/store/css/PIE.htc); margin-bottom:10px; }
+.errorMsgBox ul, .infoMsgBox ul { margin:0; }
+.errorMsgBox ul  li, .infoMsgBox ul  li { list-style-type:none; }
+.errorMsgBox p, .errorMsgBox li {margin-bottom: 0;}
+.infoMsgBox { color:#000;}
+
+span.displaced {
+	display:inline;
+	margin-left:15px;
+}
+
+.nav_btn_simple_link a { color:#666;font-weight:bolder; }
+.nav_btn_div_link a { display:block; background-color:#4C4C4C; padding:4px 4px; color:#FFF; font-weight:bold; text-decoration: none; }
+.nav_btn_div_link a:hover { background-color:#7f0019;}
+
+.confirmation_table { width:100%; border-collapse:collapse;margin-bottom:15px;table-layout: fixed;}
+.confirmation_table caption { margin-bottom:10px; font-weight:bold; }
+.confirmation_table tr {border:1px solid #dddddd;}
+.confirmation_table td {border:1px solid #dddddd; padding:10px; word-wrap: break-word; width:447px; }
+.confirmation_table th {padding:7px 10px; width:210px; background-color:#f5f5f5;font-weight:bold;}
+
+#shoppingFlow {width:100%;}
+#shoppingFlow ol.stepNavi {overflow: hidden; margin: 0 auto; width: 440px;}
+#shoppingFlow .stepNavi li{list-style: none; float: left;}
+#shoppingFlow .stepNavi .current { background:url("//img.muji.com.cn/img/cn/store/cart/crumbs.png") no-repeat scroll 100% 0 #E5E5E5; color: #333; font-weight: bold; }
+#shoppingFlow .stepNavi li span {
+padding:10px 18px 10px 12px;
+height: 15px;
+background:url("//img.muji.com.cn/img/cn/store/cart/crumbs2.png") no-repeat scroll 100% 0 #f0f0f0;
+border-radius: 2px 0 0 2px;
+-moz-border-radius: 2px 0 0 2px;
+-webkit-border-radius: 2px 0 0 2px;
+-o-border-radius: 2px 0 0 2px;
+-ms-border-radius: 2px 0 0 2px;
+display:block;
+margin-right: 2px;
+color: #666;
+font-size: 10px;
+}
+
+#step_nav_container { padding:0px 0px 5px 0px; color:#666;}
+#step_back_btn { float:left;width:235px;}
+
+
+.content,
+#footer {    padding: 0 15px; width: 880px; margin: 0 auto; }
+
+#main {width: 700px; margin: 0 auto; margin-top: 20px; overflow: hidden; min-height: 300px; }
+
+
+
+#headerWrap {width: 100%; min-width: 910px; height: 32px; background: #7F0019; color: #FFF; display:block;}
+#headerWrap a:hover { color: #FFF; }
+#header {width: 910px; margin: 0 auto; padding:0 15px; }
+#header a:link, #header a:visited { color: #FFF; font-weight:bold; text-decoration:none;}
+#header a:active, #header a:hover { color: #BF808C; text-decoration:none; }
+#header img { vertical-align: bottom; }
+
+#siteName {float: left; padding: 7px 0 0 15px; font-size: 12px; line-height: 1;}
+#globalNav {float: right; height: 25px; font-size: 12px; line-height: 1;}
+#globalNav li {float: left; padding: 7px 15px 0 0;}
+#siteName a, #globalNav a {display: block; overflow: hidden; height: 18px; background-image: url("/cn/net/contents/img/store/common/header.png"); background-repeat: no-repeat; text-indent: -9999px;}
+#siteName a { width: 115px; background-position: 0 0; }
+#siteName a:hover { background-position: 0 -18px; }
+
+#gnHome a { width: 22px; background-position: 0 -40px; }
+#gnStore a { width: 45px; background-position: -33px -40px; }
+#gnShop a { width: 45px; background-position: -91px -40px; }
+#gnLab a { width: 78px; background-position: -148px -40px; }
+#gnContact a { width: 45px; background-position: -238px -40px; }
+#gnChat a { width: 44px; background-position: -297px -40px; }
+#gnGS a { width: 63px; background-position: -559px -40px; }
+
+#gnHome a:hover, #gnHome strong a { background-position: 0 -58px; }
+#gnStore a:hover, #gnStore strong a { background-position: -33px -58px; }
+#gnShop a:hover, #gnShop strong a { background-position: -91px -58px; }
+#gnLab a:hover, #gnShop strong a { background-position: -148px -58px; }
+#gnContact a:hover, #gnContact strong a { background-position: -238px -58px; }
+#gnChat a:hover, #gnChat strong a { background-position: -297px -58px; }
+#gnGS a:hover, #gnGS strong a { background-position: -559px -58px; }
+
+#sideNav, #main { margin-bottom: 30px;}
+#sideNav {float: left;margin-right: 30px;margin-top: 27px;width: 150px;}
+#sideNav img { vertical-align: middle; }
+#sideNav h2 {font-size: 13px; font-weight: bold; margin: 0 0 7px;}
+#sideNav h3 {margin-bottom: 0;}
+#sideNav #snCategory h2 { margin-bottom:6px;}
+#sideNav #snCategory #snCategoryList {margin-top: -20px; padding-bottom: 5px; line-height: 14px; font-size: 10px; font-weight: normal; text-align: right;  }
+
+#snRefinement {margin-bottom: 24px;}
+#snRefinement a { text-decoration: none; }
+#snRefinement .select {padding: 4px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: #CCC;}
+#snRefinement dl {padding: 5px 4px 4px 4px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background: #CCC;}
+#snRefinement dt {padding: 9px 10px 4px 10px; margin-top: -1px; -moz-border-radius: 1px 1px 0 0;-webkit-border-top-right-radius: 1px; -webkit-border-top-left-radius:1px; border-radius: 1px 1px 0 0; background: #F5EEDD; line-height:13px; font-weight: bold;}
+#snRefinement dd {padding: 0 10px; background: #F5EEDD; line-height: 20px;}
+#snRefinement dd span.current {display: block; padding-left: 10px; background: #D9D3C4;}
+#snRefinement dd a {display: block; padding-left: 10px; }
+#snRefinement dd.more {font-weight: bold;}
+#snRefinement dd.expand {padding-top: 5px; -moz-border-radius: 0 0 1px 1px; -webkit-border-bottom-right-radius: 1px; -webkit-border-bottom-left-radius: 1px; border-radius: 0 0 1px 1px;}
+#snRefinement dd.expand a {padding: 5px 0; border-top: 1px solid #DBD5C5; background: none; text-decoration: underline;}
+#snRefinement dd.expand a:hover {background: none;}
+
+
+#snSiblingCategory a { text-decoration: none; }
+#snSiblingCategory {margin-bottom: 24px;}
+#snSiblingCategory h2 { display: none; }
+
+#snSiblingCategory dl {border-bottom: 1px solid #CCC;}
+#snSiblingCategory dt{position:relative;z-index:2;margin-bottom:-1px;border-top:1px solid #FFF; }
+#snSiblingCategory dt a{display:block;padding:8px 10px 5px 10px;-moz-border-radius:2px 2px 0 0;-webkit-border-top-right-radius:2px;-webkit-border-top-left-radius:2px;border-radius:2px 2px 0 0;background:#666;color:#FFF;line-height:21px; font-size:14px;font-weight:bold; *zoom:1;}
+#snSiblingCategory dt a span{display:block;height:19px;margin-top:4px;cursor:pointer;font-size: 10px;}
+#snSiblingCategory dd {border-right: 1px solid #CCC; border-left: 1px solid #CCC; line-height: 20px;}
+#snSiblingCategory dd a {display: block; border-top: 1px dotted #C6C5BD; background: #F3F3F3;}
+#snSiblingCategory dd span {line-height: 15px; font-size: 10px;}
+#snSiblingCategory dd span.current {display: block; padding: 2px 10px; border-top: 1px dotted #C6C5BD; background: #FFF; line-height: 20px; color: #7F0019; font-size: 12px;}
+#snSiblingCategory dd a {display: block; padding: 2px 10px; *zoom:1; height: auto !important; height: 1%;}
+#snSiblingCategory dd a span {color: #7F7F7F; line-height: 15px; font-size: 10px;}
+#snSiblingCategory dd a:hover { background: #E2E2E2; }
+#snSiblingCategory dd a:hover span { color: #7F0019; }
+#snSiblingCategory dl dd:first-child a { border-top: 1px solid #CCCCCC; }
+
+
+#snCategory a { text-decoration: none; }
+#snCategory #snCategoryList {margin-top: -20px; padding-bottom: 5px; line-height: 14px; font-size: 10px; font-weight: normal; text-align: right;}
+#snCategory ul { border-top: 1px solid #666; margin:0;}
+#snCategory li { padding: 3px 0 5px; border-bottom: 1px solid #E6E6E6; list-style-type:none;  }
+#snCategory li a { display: block; *zoom: 1;}
+#snCategory .snMujilife {margin-top:20px;}
+#snCategory ul ul { border: none; }
+#snCategory ul ul li { border: none; font-size: 12px; }
+#snCategory ul ul li {padding: 0; line-height: 20px;word-wrap: break-word; }
+* html #snCategory ul ul li { border-bottom: 1px solid #fff; } 
+#snCategory ul ul li a {height: auto !important; height: 1%; padding: 0 0 0 15px; background: url(//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png) no-repeat 0 0px; background-position: 5px -220px;}
+#snCategory ul ul li a:hover,
+#snCategory ul h3 {height: 27px; font-weight:bold; }
+#snCategory ul ul li a:hover { font-weight:normal; background-color:#e6e6e6; }
+#snCategory ul h3 img {height: 22px; width:22px; margin-right:5px; }
+#snCategory .snCategoryL2 li.current  a { background: #f5f5f5 url("//img.muji.com.cn/img/cn/store/common/nav_arrow.gif") no-repeat 0 -40px; font-weight:bold; }
+#snCategory ul ul li a:hover,
+#snCategory ul ul li.current a:hover {background: #e6e6e6 url("//img.muji.com.cn/img/cn/store/common/nav_arrow.gif") no-repeat 0px -20px;}
+#snCategory ul h3#features  { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -5px; }
+#snCategory ul h3#specialBuy { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -30px; }
+
+#snCategory ul h3.cat001  { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -55px; }
+#snCategory ul h3.cat002  { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -85px; }
+#snCategory ul h3.cat003  { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -115px; }
+#snCategory ul h3.cat004  { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -143px; }
+#snCategory ul h3.cat005  { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -170px; }
+#snCategory ul h3.cat006  { text-indent: -9999px; background: url("//img.muji.com.cn/img/cn/store/common/sprite_sidenav.png") no-repeat -5px -196px; }
+
+ul.snCategoryL1 li h3 { background: url("//img.muji.com.cn/img/cn/store/common/blank.gif") no-repeat scroll 0 0 transparent; }
+ul.snCategoryL1 li h3.cat001002003 { background-image: url("//img.muji.com.cn/img/cn/store/common/cat001002003.png"); }
+ul.snCategoryL1 li h3.cat001002004 { background-image: url("//img.muji.com.cn/img/cn/store/common/cat001002004.png"); }
+ul.snCategoryL1 li h3.cat001002005 { background-image: url("//img.muji.com.cn/img/cn/store/common/cat001002005.png"); }
+ul.snCategoryL1 li h3.cat001002006 { background-image: url("//img.muji.com.cn/img/cn/store/common/cat001002006.png"); }
+ul.snCategoryL1 li h3.cat001 { background-image: url("//img.muji.com.cn/img/cn/store/common/cat001.png"); }
+ul.snCategoryL1 li h3.cat002 { background-image: url("//img.muji.com.cn/img/cn/store/common/cat002.png"); }
+ul.snCategoryL1 li h3.cat003 { background-image: url("//img.muji.com.cn/img/cn/store/common/cat003.png"); }
+
+#sideNav #snCategory ul li.D00010 { border-bottom: 0; }
+#sideNav #snCategory ul li.D00011 { background: #f7f7f7; }
+
+.clearfix:after,
+.panel:after,
+#header:after,
+#globalNav:after,
+.content:after,
+#breadcrumbs ol:after,
+.skipNav ul:after,
+#footerNav:after,
+#pageEnd:after,
+#storeHeader:after,
+.productlistControls:after,
+.sizeSelector:after,
+.colorSelector:after,
+#storeFooter:after {content: " "; display: block; visibility: hidden; clear: both; height: 0.1px; font-size: 0.1em; line-height: 0;}
+
+#breadcrumbs {padding-top: 12px; overflow: hidden;}
+#breadcrumbs ol {height: 19px; background: #DDD url("//img.muji.com.cn/img/cn/store/common/breadcrumbsbg.gif") repeat-x 0 0;}
+#breadcrumbs li {float: left; padding: 0 4px 0 0; color: #999; font-size: 10px; line-height: 19px; background: #FFF;  list-style-type: none;}
+#breadcrumbs a {display: block; padding: 0 12px 0 5px; text-decoration: none;
+background: #DDD url("//img.muji.com.cn/img/cn/store/common/breadcrumbs.png") no-repeat 100% 0; -moz-border-radius: 2px 0 0 2px; -webkit-border-top-left-radius: 2px; -webkit-border-bottom-left-radius: 2px; border-radius: 2px 0 0 2px;}
+#breadcrumbs a:hover {
+background: #CCC url("//img.muji.com.cn/img/cn/store/common/breadcrumbs.png") no-repeat 100% -19px;}
+
+.pdf {background: url(//img.muji.com.cn/img/common/icon_pdf.gif) no-repeat left top; padding-left: 18px; zoom: 1;}
+
+.lead {margin-bottom: 20px; font-size: 14px;}
+
+.skipNav {margin: 30px 0 20px;}
+.skipNav ul {margin-bottom: 10px; border-left: 1px solid #e8e8e8; border-bottom: 1px solid #666;}
+.skipNav li {float: left; font-weight: bold; line-height: 15px;}
+.skipNav li a {display: block; padding: 5px 20px; text-decoration: none; border-right: 1px solid #e8e8e8; background: url('//img.muji.com.cn/img/common/arrow_down.png') no-repeat 10px center;}
+.skipNav .current a,
+#snSection1 .skipNav .snLink1 a,
+#snSection2 .skipNav .snLink2 a,
+#snSection3 .skipNav .snLink3 a,
+#snSection4 .skipNav .snLink4 a,
+#snSection5 .skipNav .snLink5 a,
+#snSection6 .skipNav .snLink6 a,
+#snSection7 .skipNav .snLink7 a,
+#snSection8 .skipNav .snLink8 a,
+#snSection9 .skipNav .snLink9 a,
+#snSection10 .skipNav .snLink10 a {background: #f4f4f4; color: #999; cursor: default;}
+
+.pageTop {text-align: right;}
+.pageTop a {padding-left: 10px; background: url(//img.muji.com.cn/img/common/arrow_up.png) no-repeat left center;}
+
+.yellowTip { width: 280px; }
+.yellowTip .content { width: 250px; padding: 10px; border: 5px solid #ddd7c7; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #f5eedd; color: #020202; }
+.yellowTip .bottom { height: 14px; background: url(//img.muji.com.cn/img/common/notch.png) top center no-repeat; }
+
+.fancyBox { background: url(//img.muji.com.cn/img/common/imageview.gif); background-repeat: no-repeat; background-position: 0 2px; width: 11px; height: 8px; padding: 0 2px 0 14px;}
+
+.loading {background: url(//img.muji.com.cn/img/common/icon_loading.gif) no-repeat 50% 50%; text-indent: -9999px;}
+
+#storeHeaderWrap { min-width: 910px; background: #FFF url("//img.muji.com.cn/img/cn/store/common/sheaderbg.gif") repeat-x 0 0;}
+#storeHeader {position: relative; width: 880px; height: 70px; margin: 0 auto; padding:0 15px; }
+#storeHeader img { vertical-align: bottom; }
+#storeMember {float: left;  margin-top:5px; }
+#storeMember li {float: left; margin-right:20px; padding: 4px 2px 0 0; }
+#storeMember a {display: block;}
+
+#smLogout {padding: 9px 15px 0 0; color: #CCC;}
+#smLogin, #smSignUp, #smCoupon { float: left; }
+#smLogin {padding: 4px 2px 0 0;}
+#smLogin a {display: block; width: 40px; height: 18px; overflow: hidden; background: url("//img.muji.com.cn/img/cn/store/common/sheader.png"); background-repeat: no-repeat; background-position: 0 0; text-indent: -9999px;}
+#smLogin a:hover { background-position: 0 -18px; }
+
+#storeNav {float: left; margin-top:5px; }
+#storeNav li { float: left; margin-right:20px; padding: 4px 2px 0 0; }
+#storeNav a {display: block;}
+#headerCartBox {position: absolute; top: 5px; left: 703px; width: 192px;}
+#headerCartBox { font-size: 10px; }
+#cartPrice span.num { font-size: 12px; font-weight: bold; margin:0 2px; }
+#headerCartBox a {display: block; overflow: hidden; padding: 0 5px 5px 5px; border: 1px solid #DCDAD2; background: #FFF; text-decoration: none; color: #666;}
+#cartTitle {float: left; padding: 8px 0 4px 20px; width: 79px; height: 17px; color:#4C4C4C; font-weight:bold; font-size:12px;  background: #FFF url("//img.muji.com.cn/img/cn/store/common/cart.gif") no-repeat 0 50%;}
+a #cartButton {position: relative; top: 6px; display: block; float: right; padding:1px 6px; height: 17px; background-color:#4C4C4C; color:#ffffff; font-weight:bold; font-size:12px;border-radius:2px; behavior:url(/cn/store/css/PIE.htc); }
+a:hover #cartButton  { background-color:#7f0019; color:#fff;} 
+#cartPriceArea {display: block; clear: both; width: 178px; padding: 5px 0; border: 1px solid #DDD7C7; background: #F5EEDD; height:14px}
+#cartOrder {display: block; padding-left: 8px;  float:left; }
+#cartPrice {display: block; float:right; padding-right: 8px; text-align: right;}
+
+#headerSearch {clear: both;}
+#headerSearch ul {padding: 6px 0;}
+#headerSearch li {float: left; padding: 0 3px 0 0;}
+#searchKeyword input {width: 176px; height: 15px; padding: 2px 0 2px 22px; border-top: 1px solid #A3A6AB; border-right: 1px solid #D3D6DD; border-bottom: 1px solid #E2E9EF; border-left: 1px solid #DADAE2; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; background: #F5F5F5 url("//img.muji.com.cn/img/cn/store/common/sheaderinputbg.gif") no-repeat 4px 50%; line-height: 15px;}
+#searchSubmit a , #searchSubmit a :visited { position:relative; margin-top:1px; display:block; background-color:#4C4C4C; padding:2px 4px; color:white; font-weight:bold; text-decoration: none; border-radius:2px; behavior:url(/cn/store/css/PIE.htc);  }
+#searchSubmit a:hover { background-color:#7f0019; }
+
+#storeHeader a {text-decoration: none;}
+
+#shStoreMember {float: left; position: relative; margin-left: 15px;}
+#shStoreNav {float: left; position: relative;}
+#shStoreMember a, #shStoreNav a {display: block;}
+
+#shStoreMember ul:after {content: ""; display: block; clear: both;}
+#shStoreMember li {float: left;}
+#shStoreMember a, #shStoreNav a {line-height: 32px; padding: 0 15px 0 0;}
+#shLogin {font-weight: bold;}
+#smLogout {padding: 0; }
+
+#hSearch {clear: both;}
+#hSearch ul {padding: 6px 0;}
+#hSearch li {float: left; padding: 0 3px 0 0;}
+#sKeyword input {width: 176px; height: 15px; padding: 2px 0 2px 22px; border-top: 1px solid #A3A6AB; border-right: 1px solid #D3D6DD; border-bottom: 1px solid #E2E9EF; border-left: 1px solid #DADAE2; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; background: #F5F5F5 url("//img.muji.com.cn/img/cn/store/common/sheaderinputbg.gif") no-repeat 4px 50%; line-height: 15px;}
+#sSubmit a , #sSubmit a :visited { position:relative; margin-top:1px; display:block; background-color:#4C4C4C; padding:2px 4px; color:white; font-weight:bold; text-decoration: none; border-radius:2px; behavior:url(/cn/store/css/PIE.htc);  }
+#sSubmit a:hover { background-color:#7f0019; }
+#hSearch #sKeyword,#hSearch #sSubmit {float: left;padding: 0 3px 0 0;}
+
+.pageTop {text-align: right;}
+.pageTop a {padding-left: 10px; background: url("//img.muji.com.cn/img/cn/store/common/arrow_up.png") no-repeat left center;}
+
+#footer {line-height: 16px;}
+#pageEnd {margin-top: 30px; border-bottom: 1px solid #666; margin-bottom:0; }
+#pageEnd li {margin-bottom: 10px;}
+#pageEnd .siteTop {float: left;}
+#pageEnd .pageTop {float: right; font-size: 100%;}
+#footerNav {margin: 10px 0;}
+#footerNav li {float:left; margin-right: 12px;  padding-right: 12px; line-height:13px; border-right: 1px solid #ccc;}
+#footerNav li:first-child { border-left:none; margin-left:0; padding-left:0; }
+#footerNav li#fnSitemap {border: none;}
+#footerNav li#fnJob {float: right;}
+#footerNav li#fnCorporate {float: right; margin-right: 0; padding-right: 0; border:none;}
+#copyright {margin-bottom: 20px; padding-top: 5px; border-top: 1px solid #E6E6E6;}
+#copyright small {font-size: 10px; font-family: "Lucida Grande",Arial,sans-serif;}
+
+
+#footer #snCategory, #footer #mobileNav {display:none;}
+
+#storeFooterWrap {padding: 5px 0; background: #F5F2E9;}
+#storeFooter {background: url(//img.muji.net/img/store/common/storefooterbg.gif) repeat-y;}
+#storeFooter dl{float: left; width: 164px; padding: 10px 15px 2px;}
+#storeFooter dt {height: 16px; margin-bottom: 5px; font-weight:bold;}
+#sfValuePrice dt {background-position: 0 -16px;}
+#sfGuide dt {background-position: 0 -32px;}
+#sfCampaign dt {background-position: 0 -48px;}
+#storeFooter dd {margin-bottom: 5px;}
+#storeFooter dl#sfCampaign {width: 274px; border-right: 0; padding: 10px 0 0 15px; margin-bottom: 0;}
+dl#sfCampaign dd {float: left; margin: 0 5px 5px 0;}
+dl#sfCampaign a img{border: 1px solid #DDD7C7;}
+dl#sfCampaign a:hover img {border:1px solid #7F0019;}
+
+div.tag { color:#000; display:inline; border-color:1px solid #CCCCCC;  padding:1px 4px; font-size:10px; -webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;border:1px solid #333333; line-height: 20px; white-space: nowrap;
+   
+	    behavior: url(/cn/store/css/PIE.htc);
+
+}
+div.tag.new { background-color:#7F0019; border-color:1px solid #7F0019; color:white; border:1px solid #7F0019 }
+
+#productList { width:730px; position:relative; font-size: 0; }
+#productList .item { font-size: 12px; }
+#productList .name { font-size: 12px; }
+.productListColView .item { width:160px; margin-right:20px; display:inline-block; margin-top:20px; vertical-align:top;} 
+.productListColView .thumb  { text-align:center; }
+.productListColView .name { word-wrap: break-word; margin-bottom:5px;}
+.productListColView .price  { margin-top:0px; }
+.productListColView .price strong  { font-weight:bold; }
+.productListColView dd.tag { margin-bottom:5px; }
+
+.productListColView  .price {display: inline-block; margin-bottom: 3px; line-height: 1.2;}
+
+.productListRowView .item {     border-bottom: 1px solid #E6E6E6; height: 100px; position: relative; }
+.productListRowView .thumb  {  height: 100px; position: absolute; width: 100px; }
+.productListRowView .name {  word-wrap: break-word; left: 120px; position: absolute; top: 10px; width: 350px; text-decoration: underline;}
+.productListRowView dd.price  { position: absolute; top: 10px; right: 30px; text-align: right; width: 200px;}
+.productListRowView dd.tag  { position: absolute; top: 45px; right: 30px; text-align: right; width: 200px;}
+
+.productlistControls { background-color: #f1f1f1; height:40px; border-top:1px solid #cccccc; border-bottom:1px solid #cccccc; margin-top:30px; }
+.productlistControls  ul  { margin-left:10px;display: inline; margin-bottom: 0;}
+.productlistControls  li { display:inline; margin-right:10px; line-height:40px; }
+.productlistControls  a { text-decoration:none; border-bottom:1px solid #cccccc;  }
+.productlistControls  .current { text-decoration:none; border-bottom:3px solid #cccccc; color:#999999; font-weight:bold; }
+.productlistControls  ul.itemsLayout { display:none; }
+
+.sortByControl { float:left; }
+.sortByControl li { float:left; margin-right: 10px; }
+.itemsLayout { float:right; margin-top: 4px;}
+.itemsLayout li { float:left; margin-right: 10px; }
+.itemsLayout a , .itemsLayout  a.current { width:29px; height:29px; display:block; border-bottom:none; }
+.itemsLayout a.productListColView { background: white url("//img.muji.com.cn/img/cn/store/common/item_viewer.gif") scroll no-repeat 0 0px;  }
+.itemsLayout a.productListColView:hover { background: white url("//img.muji.com.cn/img/cn/store/common/item_viewer.gif") scroll no-repeat -0px -64px;  }
+.itemsLayout a.productListRowView { background: white url("//img.muji.com.cn/img/cn/store/common/item_viewer.gif") scroll no-repeat -32px 0px;  }
+.itemsLayout a.productListRowView:hover { background: white url("//img.muji.com.cn/img/cn/store/common/item_viewer.gif") scroll no-repeat -32px -64px;  }
+.itemsLayout a.productListColView.current { background-position: 0 -32px; cursor:text; }
+.itemsLayout a.productListRowView.current { background-position: -32px -32px; cursor:text; }
+
+.pagerControl td { padding: 0 5px; }
+.pagerControl td.num { background-color:#e6e6e6; padding: 2px 6px; text-decoration:none; border-right: 2px solid #FFFFFF; } 
+.pagerControl td.num a {  text-decoration:none; }
+
+.productlistPager  { padding:10px 0; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; }
+.productlistPager:first-child  { border-top:none; }
+.productlistPager:after {content: " "; display: block; visibility: hidden; clear: both; height: 0.1px; font-size: 0.1em; line-height: 0;}
+.productlistPager .pagerControl { float: right; margin-bottom:0; }
+.productlistPager .totalItems {float:left;  padding: 2px 10px; }
+.productlistPager .totalItems .itemnum { font-weight: bold; font-size: 14px; }
+.colorInfo { text-align: center; width: auto; }	
+.colorInfo .colorBlock { width: 20px; height:20px; border:1px solid #dddddd; padding:3px; margin:0 auto; }
+.colorInfo .colorBlock div { width:100%; height: 100%; }
+.colorInfo  span { font-size:10px; }
+		
+dl.info dt.thumb img { display:block; }
+
+#overview:after,
+.thumbnails:after  { content: "."; display: block; visibility: hidden; clear: both; height: 0; font-size: 0; line-height: 0;}
+#overview { margin-bottom: 30px;}
+
+.mainPicture {margin-bottom: 10px;}
+#picture {float: left; width: 400px; margin-bottom: 25px;}
+.thumbnails {margin-right: -6px; overflow: hidden; text-align:left; }
+.thumbnails ul { margin:0; }
+
+.thumbnails li {display:inline-block; line-height: 0.1; list-style-type:none; *display:inline; *zoom:1;}
+.thumbnails li a img {border: 1px solid #CCC; margin: 5px 6px 0 0;}
+.thumbnails li a:hover img {border: 1px solid #7f0019;}
+
+.controlPanel {float: right; width: 280px; margin-bottom:25px}
+
+.priceTag {border-top: 6px solid #7f0019; background-color: #f5eedd; padding: 10px 0; border-bottom: 1px solid #ddd7c7; }
+.priceTag ul { margin:0; } 
+.priceTag ul li { list-style-type: none; display: inline; }
+
+#info {margin: 0 10px 5px; position:relative; z-index:5; }
+.controlPanel h1 {border-bottom: 4px solid #7f0019; margin: 0; padding: 0 10px 10px; font-size: 14px;}
+.controlPanel p { padding: 10px; border-bottom: 4px solid #7f0019;} 
+.controlPanel div.price { display:inline-block; border: 1px solid black; margin: 10px 10px 15px; padding: 0 5px; text-align: right; vertical-align: middle; }
+.controlPanel div.price  del .num { font-size: 12px; }
+.controlPanel div.price  .num { font-size: 16px; }
+#prodSerial { padding: 0 10px; }
+#shippingInfo { padding: 0 10px; }
+#vatHint { font-size: 10px; line-height: 11px; margin: 4px 0; width: 100px; }
+	
+.attrSelector { padding:10px 10px; background-color:#f7f7f7; border-bottom: 1px solid #e7e7e7; }
+.attrSelector dt { font-weight: bold; padding-bottom: 5px; }
+.attrSelector ul { margin:0; padding:0; margin-top: 2px;}
+.attrSelector ul li { margin:0 2px 0 0; padding:0; list-style-type: none; float:left; }
+.attrSelector  .colorInfo {  cursor:pointer; color: #FFFFFF; height:40px; width:40px; background: white url("//img.muji.com.cn/img/cn/store/common/bgr_listchip.png") scroll no-repeat -40px 0;  }
+.attrSelector  .colorInfo.disabled  { cursor:not-allowed; color:#444444;}
+.attrSelector  .colorInfo.selected {  }
+
+.sizeSelector  .colorInfo span {  font-size: 11px; font-weight: bold; position: relative; top: 13px; }
+.sizeSelector  .colorInfo { background-position:-40px 0;  }
+.sizeSelector  .colorInfo.selected { background-position:0 0; }
+.sizeSelector  .colorInfo.disabled  { background-position:-80px 0;}
+
+.colorSelector  .colorInfo span { display:none; }
+.colorSelector  .colorInfo { background-position:-40px -40px;  }
+.colorSelector  .colorInfo.selected { background-position:0 -40px; }
+.colorSelector  .colorInfo.disabled  { background-position:-80px -40px;}
+
+#placeOrderWrap { margin-top:20px; border: 1px solid #d9d9d9; padding:5px; }
+.placeOrder { padding:15px 10px; background-color:#F5EEDC; text-align:right; }
+.placeOrder label { padding:0; margin:0; display:inline; float:none; }
+.placeOrder input { padding:5px; width:140px; font-size:14px; }
+.placeOrder  select { margin:2px; }
+.selectQuantity { width:50px; margin:0 10px; padding:2px 5px; }
+
+.notAvailable { display:none; position:absolute; width:100%; height:100%; top:0; left:0; }
+.mainPictures, .thumbnails , #placeOrderWrap, .sizeSelector, .colorSelector { position:relative; }
+.mainPictures .notAvailable span { text-align:center; background-color: #FFE7E7; display: block; font-weight: bold; margin: 180px auto; padding: 10px;width: 200px; }
+#overview.notAvailableOn  .notAvailable { display:inherit; }
+
+#additionalInfo { float: left; width: 520px; }
+.sizeTable { width:100%; margin-bottom:15px; }
+.sizeTable th { padding:4px 4px; font-weight:bold; text-align:center; border:1px solid #E7E7E7; background-color:#F7F7F7; }
+.sizeTable td { padding:8px 4px; text-align:center; border:1px solid #E7E7E7;  }
+
+.infoTable { width:100%; margin-bottom:15px; }
+.infoTable th { width:100px; padding:4px 4px; font-weight:bold; text-align:center; border:1px solid #E7E7E7; background-color:#F7F7F7; }
+.infoTable td { padding:8px 8px; text-align:left; border:1px solid #E7E7E7;  }
+
+.infoText { border:1px solid #E7E7E7; background-color:#F7F7F7; width:100%; margin-bottom:15px; }
+.infoText h2 { margin:10px 10px 20px;  }
+.infoText h3 { font-size:14px; margin:10px; padding-top:10px; border-top:1px solid #E7E7E7; }
+.infoText p { margin: 0 10px 10px 10px; }
+
+.lowStock { color: red; font-weight: bold; margin-top: 5px; }
+#socialLunks { margin-top:10px; }
+#socialLunks li { list-style: none; float: left; }
+
+#subCol { width:180px;float:left;}
+
+.panel.button{ background: none; border:none; }
+.panel.button.displaced{ text-align:center; }
+.panel.button.right { float:right; }
+
+fieldset h2{
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.panel{
+  background: #fff url("//img.muji.com.cn/img/cn/store/common/bg_label.png") repeat-y;
+  border-top: solid 1px #ccc;
+}
+
+.panel:first-child{
+  border:none;
+}
+
+label,div.label{
+  margin-right: 10px;
+  padding: 7px 10px;
+  display: block;
+  float: left;
+  width: 210px;
+  font-weight: bold;
+
+}
+
+.panel span.advice,.panel p.advice{
+  font-size: 95%;
+  font-weight: normal;
+}
+
+.panel.credit select {
+	width:85px;
+}
+
+div.panel.radio { position:relative;  }
+div.panel.radio label { left: 20px; position: relative; width:190px; }
+div.panel.radio input {    float: left; left: 7px; position: absolute; top: 7px; width: 20px; }
+div.panel p { margin: 0 0 0 240px; }
+div.panel p.advice {  float: right; width: 264px; }
+.centerForm div.panel p.advice {  float: right; width: 225px; }
+div.panel.check p.advice {  float: none; width: auto; }
+div.panel.radio p.advice {     float: left; font-size:12px; }
+div.panel p.error { padding: 4px 8px 4px 0; color: red; }
+div.panel ul { margin: 0 0 0 255px; padding-top:10px; }
+
+.panel p.advice{
+  padding: 4px 0;
+  margin:0;
+}
+
+.panel p.advice span{
+  display:inline-block;
+  padding: 2px 5px;
+  background: #f3f3f3;
+}
+span.agreement {
+  display:inline-block;
+  float: right;
+  width: 420px;
+  margin-right: 20px;
+}
+
+.check label{
+  display:inline;
+  width:auto;
+  float: none;
+  vertical-align: text-bottom;
+}
+
+.check input{
+  margin: 10px 0 0 10px;
+}
+
+.txt input, select{
+  width: 180px;
+  border: solid 1px #e2e3ea;
+  border-top-color: #abadb3;
+  padding: 2px;
+  margin: 10px 5px 10px 0;
+}
+
+.error input,.error select{
+  background: #F99;
+}
+
+.small select,.small input{
+  width:80px;
+}
+
+.date select{
+  width:80px;
+}
+
+input.button{
+  text-align: center;
+  padding: 5px 5px;
+  border: solid 0px #333333;
+  background: #333333;
+  color: #FFF;
+  font-weight: bold;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+input.button.important {
+	padding:10px;
+}
+
+input.button:hover {
+  background-color:#7f0019;
+  border-color:#7f0019;
+  cursor:pointer;
+}
+
+.forgotPass{text-align:center; margin-top:15px;}
+
+.infobox{
+  margin-top:15px;
+  font-size: 95%;
+  padding: 15px;
+  padding-bottom: -15px;
+  background: #f3f3f3;
+}
+
+.infobox p,.infobox ul{
+  margin-bottom: 5px;
+}
+
+.infobox ul{ margin-left: 15px;}
+.infobox ul,.infobox li{
+  list-style: none;
+}
+
+fieldset{
+  margin-bottom: 20px;
+  padding: 0;
+  border: solid 1px #ccc;
+}
+
+.centerForm  fieldset{
+  margin-bottom: 15px;
+  padding: 15px;
+  border: solid 4px #ccc;
+}
+.centerForm  label{ text-align: right; }
+.centerForm .panel{ background: none;border: none; }
+.centerForm div.button{ text-align: center; }
+.centerForm .panel{ margin-bottom: 5px; }
+.centerForm  h2 { font-size:18px; margin-top:0; }
+
+span.price { }
+span.currency { }
+.price del {display: block; color: #999;}
+.price del:after {content:"→";}
+.price ins {display: block; color: #7f0019;}
+.price .num {font-size: 14px; font-weight: bold; margin: 0 2px; }
+.price del .num {font-size: 11px;}
+
+div.address p { margin:0; padding:0; font-size: 13px; color: #666560; }
+div.address p:first-child { padding-bottom:10px; }
+
+#orderSums { margin-bottom: 25px; }
+#orderSums > div { width:200px; float:right; clear:both; text-align:right; margin-bottom:3px; }
+#orderSums > div .label { float:left; font-weight:normal;}
+#orderSums > div#couponSum { color:red; }
+#orderSums > div#totalSum { font-weight:bold; font-size:14px; border-top: 1px solid #666; padding:5px 0;}
+#orderSums > div#totalSum  .label { font-weight:bold; }
+
+#ShoppingCart { width:100%; border:1px solid #dddddd; margin-bottom: 15px; table-layout: fixed; }
+#ShoppingCart thead { background-color:#f5f5f5; text-align:center; font-weight: bold;}
+#ShoppingCart td { border-left: 1px solid #dddddd; padding:5px 5px; vertical-align: middle; word-wrap:break-word; }
+#ShoppingCart .prodPic { float:left; width:50px; height:50px; padding: 3px 11px 3px 6px; }
+#ShoppingCart td.product { border-left:0; padding-left:0; } 
+#ShoppingCart tbody tr { border-top: 1px solid #dddddd;}
+#ShoppingCart tbody tr:first-child { border-top: none;}
+#ShoppingCart .button input { margin-top:5px; margin-left:auto; width:auto; }
+#ShoppingCart .amount input.text { width:30px; padding:2px; text-align:right; }
+#ShoppingCart .article { color:#999; font-size:11px; } 
+#ShoppingCart .product { text-align:left; width:230px; padding:10px;}
+#ShoppingCart .product p { float: right; width: 185px; margin:0;  }
+#ShoppingCart .product span { display:block; }
+
+#ShoppingCart.readOnly .product { width:290px; padding: 10px;}
+#ShoppingCart.readOnly .product p { width: 255px }
+#ShoppingCart.readOnly .amount { width:50px; }
+
+#ShoppingCart .total { width:80px; text-align:right; }
+#ShoppingCart .multibuy { color:red; font-weight:bold; }
+#ShoppingCart .notes { width:60px; text-align:left; font-size:12px;}
+#ShoppingCart .price { width:80px; text-align:right; }
+#ShoppingCart .other { width:60px; text-align:center; }
+#ShoppingCart .amount { width:60px; text-align:center; font-size:12px;}
+
+#ShoppingCart thead td { text-align:center !important; }
+#orderInfo { width:700px; margin-bottom:15px; }
+#orderInfo dt { font-weight:bold; }
+#orderInfo dt { display:inline-block; width:120px; margin:0; padding:0; overflow:hidden; }
+#orderInfo dd { display:inline-block; width:200px; margin:0; padding:0; overflow:hidden; }
+
+#myAccount dt { font-weight:bold; font-size:16px; margin-top:10px; padding:10px 0 10px 0; }
+#myAccount dd { padding-bottom:10px; margin: 0 0 0 60px; }
+
+#SearchForm .panel { margin-left:0; padding-left:0;}
+#SearchForm ul { float:left; width: 300px; margin-left:0; }
+#SearchForm li { list-style: none outside none;}
+#SearchForm ul label { display:inline; width:auto; float:none; vertical-align: middle }
+#SearchForm ul input { display:inline; width:auto; float:none; vertical-align: middle; margin: 5px 0 5px 10px; }
+	
+#submitButton { margin-bottom: 25px; }
+#agb { text-align:right; margin-bottom:15px; }
+	
+#myAddresses { margin-bottom:15px; }
+#myAddresses dt {     font-size: 12px; font-weight: bold; border-bottom: 1px solid #666666; padding-bottom:5px; margin-top:20px; }
+#myAddresses dt.otherAddress { margin-top:30px; }
+#myAddresses dd { padding:20px 0; border-bottom: 1px solid #e6e6e6; }
+#myAddresses dd.last {border-bottom: 1px solid #666666; }
+#myAddresses dd:after,#myAddresses dt:after {content: " "; display: block; visibility: hidden; clear: both; height: 0.1px; font-size: 0.1em; line-height: 0;}
+#myAddresses div.address { width:300px;  float:left; padding-left: 10px; }
+#myAddresses div.controls { float:right;  text-align:right; }
+#myAddresses div.controls div:first-child { margin-bottom: 30px; } 	
+
+.confirmation_table	.controls { float: right; }
+.confirmation_table	.address { float:left; width: 340px; word-wrap: break-word; }
+
+#orderList {  width:100%;}
+#orderList th { background-color:#F5F5F5; font-weight:bold; }
+#orderList td, #orderList th { border:1px solid #DDDDDD; text-align:center; padding:4px 5px;}
+
+div.chipHint {
+	display:none;
+    color: #FFFFFF;
+    height: 27px;
+    padding: 3px 3px 5px;
+    position: absolute;
+    right: 282px;
+    width: 100px;
+	background: #7F0019 url("//img.muji.com.cn/img/cn/store/common/chip-arrow.png") scroll no-repeat right 0;
+}
+
+p.couponDelete { width: 450px; word-wrap: break-word; }
+
+.mainPictures a{
+outline:none;
+}
+
+p#chipColorName.current{
+height: 30px;
+}
+
+
+ul.listChip {
+position: relative;
+margin: 13px -10px -6px -2px;
+*margin: 13px -10px 0 -2px;
+}
+
+ul.listChip li {
+
+position: relative;
+float: left;
+margin: 0 5px 6px 0;
+text-align: center;
+}
+
+ul.listChip li a {
+background: url("//img.muji.com.cn/img/cn/store/common/bgr_listchip.png") no-repeat 0 0;
+display: block;
+position: relative;
+width: 40px;
+height: 40px;
+color: #ffffff;
+text-decoration: none;
+outline: none;
+}
+
+ul.listChip li a:hover,
+ul.listChip li a:visited { color: #fff; text-decoration: none; }
+
+ul.listChip li a:hover,
+ul.listChip li.selected a { background-position: -40px 0; }
+
+ul.listChip li.disable a,
+ul.listChip li.disable a:hover { background-position: -80px 0; cursor: default; }
+
+ul.listChip li.selectedSoldOut a,
+ul.listChip li.selectedSoldOut a:hover { background-position: -120px 0; }
+
+ul.listChip li img {
+position: absolute;
+top: 5px;
+left: 5px;
+}
+
+ul.listChip li em {
+display: block;
+
+padding-top: 15px;
+font-size: 9px;
+line-height: 1.1;
+font-style: normal;
+}
+
+
+ul.listChip li em.cValue { padding-top: 9px; }
+
+ul.listChip li span { display: none; }
+
+ul.listChip li span.cUnit {
+display: block;
+font-size: 8px;
+line-height: 100%;
+}
+
+ul#listChipColor li span { display: none; }
+
+ul#listChipColor li span.disable {
+background: url("//img.muji.com.cn/img/cn/store/common/ico_disable.png") no-repeat 10px 10px;
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 40px;
+height: 40px;
+z-index: 1001;
+}
+
+ul#listChipColor li span.disable:hover {
+background-position: 7px 7px;
+border: 3px solid #7F0019;
+width: 34px;
+height: 34px;
+}
+
+
+ul#listChipSize {
+position: relative;
+margin: 13px -10px -6px -2px;
+*margin: 13px -10px 0 -2px;
+}
+
+ul#listChipSize  li {
+background: none;
+position: relative;
+float: left;
+margin: 0 5px 6px 0;
+text-align: center;
+}
+
+ul#listChipSize  li a {
+background: none;
+display: block;
+
+position: relative;
+width: auto;
+height: auto;
+min-width: 40px;
+color: #ffffff;
+text-decoration: none;
+outline: none;
+overflow: hidden;
+max-width: 245px;
+_width: 245px;
+}
+
+
+
+ul#listChipSize li em {
+display: block;
+padding: 2px;
+font-size: 9px;
+line-height: 1.1;
+font-style: normal;
+border: 3px solid #ccc;
+background-color: #fff;
+overflow: hidden;
+max-width: 242px;
+_width: 242px;
+}
+ul#listChipSize li em span {
+display: block;
+padding: 10px 4px;
+font-weight: bold;
+background-color: #000;
+overflow: hidden;
+max-width: 242px;
+_width: 242px;
+}
+
+
+ul#listChipSize li.disable em span {
+background-color: #ccc;
+}
+
+ul#listChipSize li a:hover em,
+ul#listChipSize li.selected em {
+border-color: #7F0019;
+}
+
+ul#listChipSize li.disable a:hover em {
+border: 3px solid #ccc;
+cursor: default;
+}
+
+ul#listChipSize li.selectedSoldOut em,
+ul#listChipSize li.selectedSoldOut a:hover em{
+border-color: #7F0019;
+}
+
+
+.controlPanel {float: right; width: 280px;}
+
+
+.buttonDisabled span {
+
+	display: block;
+	width: 130px;
+	font-size: 14px;
+
+  text-align: center;
+  padding: 5px 5px;
+  border: solid 0px #999999;
+  background: #999999;
+  color: #FFF;
+  font-weight: bold;
+  min-width:100px;
+  min-width:90px\9;  
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+}
+
+#intoCartOff {
+display: inline-block;
+*display: inline;
+*zoom: 1;
+}
+
+div.chipHint {
+	color: #FFFFFF;
+	height: 27px;
+	padding: 3px 3px 5px;
+	position: absolute;
+	right: 282px;
+	width: 100px;
+	background: #7F0019 url("//img.muji.com.cn/img/cn/store/common/chip-arrow.png") scroll no-repeat right 0;
+}
+
+
+
+
+ul.listChip li a.chipCover 
+//position: absolute;
+width: 40px;
+height: 40px;
+cursor: pointer;
+z-index: 1000;
+opacity: 100.0;
+}
+ul.listChip li.disable a.chipCover,
+ul.listChip li.disable:hover a.chipCover {
+cursor: default;
+}

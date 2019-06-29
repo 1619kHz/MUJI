@@ -1,0 +1,148 @@
+/* 重置样式 */
+html {
+    font-size: 14px;
+    color: #333333;
+  }
+  body {
+    margin: 0;
+  }
+  ul,h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
+  
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /* 快捷导航 */ 
+  .fast_nav{
+      border-bottom: 1px solid #b3b1b3;
+  }
+  .fast_nav> .wrapper::after{
+    content: "";
+    display: block; 
+    clear: both;
+  }
+    .fast_nav .logo {
+    float: left;
+    line-height: 4em;
+    } 
+    
+    .fast_nav .other {
+    float: right;
+    line-height: 4em;    
+  }
+  .fast_nav .other>span{
+      padding: 0 10px;
+  }
+   /* 顶部导航 */  
+   .top_nav{
+    border-bottom: 1px solid #b3b1b3;
+}  
+.top_nav> .wrapper::after{
+    content: "";
+    display: block; 
+    clear: both;
+  }
+.top_nav .nav>li{
+    float: left;
+    list-style: none;
+    padding: 0 10px;
+    line-height: 4em;
+}
+
+.title01_nav{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float:left;
+    margin-left:320px;
+}
+.time_nav{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float:left;
+}
+/* 标题1 */
+.title01_nav .nav>ul{
+    font-weight:bold;	
+    font-size:30px; 
+    list-style: none;
+}
+/* 时间 */
+.time_nav .nav>div{
+    list-style: none;
+    line-height: 4em; 
+    color: #999;
+}
+.h1_nav .nav>p{
+    line-height:1.6; 
+    font-size:20px; 
+    color:rgb(8, 0, 0);
+    width:850px;
+}
+/* 标题2 */
+.title02_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;	
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+/* 标题3 */
+.title03_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;	
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+/* 插入食谱图 */
+.title03_nav .nav>li>p {
+    float: left;
+    margin: 0 0 5px 25px;
+  }
+/* 标题4 */
+.title04_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+/* 标题5 */
+.title05_nav .nav>li{
+    font-weight:bold;	
+    font-size:20px; 
+    list-style: none;	
+    color: rgb(8, 0, 0);
+    line-height: 6em;
+}
+/* 插入人物图 */
+.title05_nav> .wrapper::after{
+    content: "";
+    display: block; 
+    clear: both;
+  }
+  .title05_nav .nav {
+    float: left;
+    line-height: 6em;
+    } 
+    
+    .title05_nav .shipu {
+    float: right;
+    line-height: 6em;    
+  }
+
+.aside{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float: right;
+}

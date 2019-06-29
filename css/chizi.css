@@ -1,0 +1,314 @@
+
+  .headerwrap {
+      border-bottom: 1px solid #E6E6E6;
+      background: #FFF;
+      width: 100%;
+      min-width: 910px;
+    }
+  .header {
+    width: 910px;
+    margin: 0 auto;
+    height: 32px;
+  }
+  body, div, ul, li, h1 ,h2, ol, p, dd, dt{
+    margin: 0;
+    padding: 0;
+  }
+
+  .siteName {
+    float: left;
+    height: 32px;
+    width: 143px;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .globalNav {
+    float: right;
+    font-size: 12px;
+    margin-right: 8px;
+    line-height: 0px;
+    display: block;
+  }
+  
+  .globalNav li {
+    float: left;
+    cursor: pointer;
+  }
+  .globalNav .gnHome{
+    line-height: 1.5;
+    width: 36px;
+    height: 32px;
+  }
+  .globalNav .gnStore{
+    line-height: 1.5;
+    width: 58px;
+    height: 32px;
+  }
+  .globalNav .gnShop{
+    line-height: 1.5;
+    width: 58px;
+    height: 32px;
+  }
+  .globalNav .gnLab{
+    line-height: 1.5;
+    width: 91px;
+    height: 32px;
+  }
+  .globalNav .gnChat{
+    line-height: 1.5;
+    width: 58px;
+    height: 32px;
+  }
+  li {
+    list-style: none;
+  }
+  .header .globalNav {
+    color: #666;
+  }
+  
+  .content{
+    padding-top: 30px;
+    font-size: 0px;
+    height: 6713.3px;
+  }
+  
+  .content .footer{
+    width: 880px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 0px;
+  }
+  .main {
+    width: 880px;
+    height: 6713.3px;
+    margin: 0 auto;
+    margin-top: 24px;
+    overflow: hidden;
+    min-height: 250px;
+  }
+  .content-header{
+    height: 96px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .page-title{
+    height: 36.8px;
+    font-size: 23px;
+    line-height: 1.6;
+  }
+  .breadcrumbs {
+    padding-top: 0;
+    border-bottom: 1px solid #999;
+  }
+  
+  .breadcrumbs ol {
+    height: 19px;
+  }
+  .breadcrumbs li {
+    float: left;
+    font-size: 10px;
+    line-height: 19px;
+  }
+  .breadcrumbs  li{
+    display: block;
+    padding: 0 12px 0 5px;
+    border-radius: 2px 0 0 2px;
+    background: #DDD  no-repeat 100% 0;
+  }
+  .breadcrumbs .current{
+    color: #999;
+    background-color: #FFF;
+  }
+  .entry-content{
+    float: left;
+    width: 700px;
+    line-height: 1.6;   
+  }
+
+  h1{
+    font-size: 23px;
+    font-weight: bold;
+    margin: 20px 0 30px;
+  }
+  .page-time{
+    margin-top: 20px;
+    color: #999;
+  }
+  .page-time.time{
+    margin-bottom: 10px;
+    float: left;
+    color: #999;
+  }
+  .content-body{
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin: 30px 0 20px;
+    font-weight: bold;
+  }
+  .entry-content p{
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  .entry-content h2{
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 30px 0 20px;
+  }
+  img.chizi{
+    float: right;
+    margin: 0 0 5px 25px;
+  }
+  .aside{
+    float: right;
+    width: 155px;
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .category dd{
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .category
+  {
+    background-image: url(https://www.muji.net/lab/the_illust_s_living.png)
+  }
+  .category
+ {
+    display: block;
+    width: 133px;
+    height: 133px;
+    padding: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 1px solid #ddd7c7;
+    background-repeat: no-repeat;
+    background-position: 27px 45px;
+    background-color: #f5f2e9;
+  }
+  .category dt{
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .yijianx dt{
+     font-size: 16px;
+     line-height: 1.6;
+  }
+  .yijianx dd{
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  .theme{
+    background-position: 0-126px;
+  }
+  .aside h2{
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-size: 100%;
+  }
+  
+  .aside ul.Link li{
+    margin-bottom: 4px;
+  }
+  li{
+    list-style: none;
+  }
+  .aside .Link p{
+    font-size: 11px;
+  }
+  .aside .section{
+     margin-top: 25px;
+     margin-bottom: 30px;
+  }
+  .aside .section li:first-child{
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .aside .data{
+    font-size: 11px;
+    color: #999;
+  }
+  .aside .picture img{
+    border: 1px solid #cccccc;
+  }
+  .bodyfooter{
+    font-size: 12px;
+    line-height: 1.5;
+    height: 101px;
+  }
+  .footer{
+    line-height: 16px;
+    height: 101px;
+  }
+  .content, .footer{
+    width: 880px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .pageend1{
+    margin-top: 30px;
+    border-bottom: 1px solid #666;
+    line-height: 0;
+    font-size: 0px;
+    height: 26px;
+  }
+  .pageend1 .end1{
+    float: left;
+    width: 108px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .pageend1 li{
+    margin-bottom: 10px;
+  }
+  
+  .pageend1 .endtop{
+    float: right;
+    font-size: 100%;
+    width: 58px;
+    height: 16px;
+    line-height: 1.5;
+    font-size: 12px;
+  }
+  .endtop{
+    text-align: right;
+  }
+  .footerend{
+    margin: 10px 0;
+  }
+  .footerend li{
+    float: left;
+    margin-right: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #ccc;
+    line-height: 13px;
+  }
+  .bodyfooter .two img{
+    width: 18px;
+    height: 12px;
+    border: 1px solid #CCC;
+    margin-right: 5px;
+  }
+  .footerend  .two{
+    float: right;
+  }
+  .footerend .three{
+    float: right;
+  }
+  .footerend .four{
+    float: right;
+  }
+
