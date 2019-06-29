@@ -158,7 +158,16 @@ html {
     color: rgb(8, 0, 0);
     
 }
-.theme section .h2{
+.aside .dt{
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.yjx>dt{
+  font-size: 20px;
+  color: rgb(8, 0, 0);
+}
+ .h2{
   font-size: 30px;
+  border-bottom: 1px solid #b3b1b3;
   color: rgb(8, 0, 0);
 }

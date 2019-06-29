@@ -1,0 +1,10 @@
+body { color:#333; font: 16px/1.5 "Helvetica", "Lucida Grande", "Microsoft YaHei", sans-serif;}
+
+#fLicence {position: absolute; right: 0; bottom: -30px;}
+#fLicence img {width: 80%;}
+#fLicence a {display: block;}
+
+@media screen and (max-width: 767px) {
+	#fLicence {bottom: -50px;}
+	#copyright {width: 80%; margin: 0;}
+}
