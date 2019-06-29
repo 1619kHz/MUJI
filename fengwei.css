@@ -136,7 +136,7 @@ html {
     line-height: 6em;
     } 
     
-    img:nth-child(4) {
+    img:nth-child(3) {
     float: right;    
   }
 
@@ -157,16 +157,6 @@ html {
     color: rgb(8, 0, 0);
     
 }
-.aside .dt{
-  margin-top: 25px;
-  margin-bottom: 30px;
-}
-.yjx>dt{
-  font-size: 20px;
-  color: rgb(8, 0, 0);
-}
- .h2{
-  font-size: 30px;
-  border-bottom: 1px solid #b3b1b3;
-  color: rgb(8, 0, 0);
-}
+
+
+ 
