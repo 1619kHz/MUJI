@@ -58,6 +58,18 @@ html {
     padding: 0 10px;
     line-height: 4em;
 }
+
+.title01_nav{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float:left;
+    margin-left:320px;
+}
+.time_nav{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float:left;
+}
 /* 标题1 */
 .title01_nav .nav>ul{
     font-weight:bold;	
@@ -107,7 +119,7 @@ html {
 }
 /* 标题5 */
 .title05_nav .nav>li{
-    font-weight:bold;	
+   
     font-size:20px; 
     list-style: none;	
     color: rgb(8, 0, 0);
@@ -129,3 +141,24 @@ html {
     line-height: 6em;    
   }
 
+.aside{
+    box-sizing: border-box;
+    border: 1px solid #cc0000;
+    float: right;
+}
+.data{ 
+  line-height: 2em; 
+  color: #999;
+
+}
+.xtitlt{
+    border-bottom: 1px solid #b3b1b3;
+    font-size:20px; 
+    list-style: none;
+    color: rgb(8, 0, 0);
+    
+}
+.theme section .h2{
+  font-size: 30px;
+  color: rgb(8, 0, 0);
+}
