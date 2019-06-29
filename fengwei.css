@@ -119,7 +119,7 @@ html {
 }
 /* 标题5 */
 .title05_nav .nav>li{
-    font-weight:bold;	
+   
     font-size:20px; 
     list-style: none;	
     color: rgb(8, 0, 0);
@@ -145,4 +145,20 @@ html {
     box-sizing: border-box;
     border: 1px solid #cc0000;
     float: right;
+}
+.data{ 
+  line-height: 2em; 
+  color: #999;
+
+}
+.xtitlt{
+    border-bottom: 1px solid #b3b1b3;
+    font-size:20px; 
+    list-style: none;
+    color: rgb(8, 0, 0);
+    
+}
+.theme section .h2{
+  font-size: 30px;
+  color: rgb(8, 0, 0);
 }
