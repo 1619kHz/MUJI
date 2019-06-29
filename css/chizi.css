@@ -1,45 +1,66 @@
-.body{ 
-    margin: 0;
-  }
+
   .headerwrap {
       border-bottom: 1px solid #E6E6E6;
       background: #FFF;
+      width: 100%;
+      min-width: 910px;   /*设置段落的最小宽度*/
     }
-  .headerwrap  {
-    width: 100%;
-    min-width: 910px;
-    height: 32px;
-  }
   .header {
     width: 910px;
     margin: 0 auto;
+    height: 32px;
   }
   body, div, ul, li, h1 ,h2, ol, p, dd, dt{
     margin: 0;
     padding: 0;
   }
+
   .siteName {
     float: left;
-    font-size: 12px;
-    line-height: 1;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 32px;
+    width: 143px;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;  /*将字体修改为黑体*/
   }
   .globalNav {
     float: right;
     font-size: 12px;
     margin-right: 8px;
+    line-height: 3em;
+    display: block;  /*具有行内元素的特性同时其块级元素的特性*/
   }
   
   .globalNav li {
     float: left;
     cursor: pointer;
   }
-  .globalNav{
-    line-height: 18px;
-    display: block;
-    font-size: 11px;
+  .globalNav .gnHome{
+    line-height: 1.5;
+    width: 36px;
+    height: 32px;
   }
-  
+  .globalNav .gnStore{
+    line-height: 1.5;
+    width: 58px;
+    height: 32px;
+  }
+  .globalNav .gnShop{
+    line-height: 1.5;
+    width: 58px;
+    height: 32px;
+  }
+  .globalNav .gnLab{
+    line-height: 1.5;
+    width: 91px;
+    height: 32px;
+  }
+  .globalNav .gnChat{
+    line-height: 1.5;
+    width: 58px;
+    height: 32px;
+  }
   li {
     list-style: none;
   }
@@ -49,6 +70,8 @@
   
   .content{
     padding-top: 30px;
+    font-size: 0px;
+    height: 6500px;
   }
   
   .content .footer{
@@ -59,51 +82,53 @@
   }
   .main {
     width: 880px;
-  }
-  .main {
-    margin-top: 0;
-  }
-  .breadcrumbs {
-    padding-top: 0;
-    border-bottom: 1px solid #999;
-  }
-  
-  .main {
-    width: 700px;
+    height: 6713.3px;
     margin: 0 auto;
-        margin-top: 0px;
     margin-top: 24px;
     overflow: hidden;
     min-height: 250px;
   }
-  .breadcrumbs ol {
+  .content-header{
+    height: 96px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .page-title{
+    height: 36.8px;
+    font-size: 23px;
+    line-height: 1.6;
+  }
+  .xiaohang {
+    padding-top: 0;
+    border-bottom: 1px solid #999;
+  }
+  
+  .xiaohang ol {
     height: 19px;
   }
-  .breadcrumbs li {
+  .xiaohang li {
     float: left;
-    padding: 0 4px 0 0;
     font-size: 10px;
     line-height: 19px;
-    background: #FFF;
+    cursor: pointer;
   }
-  .breadcrumbs  li{
-    display: block;
+  .xiaohang  li{
+    display: block;  
     padding: 0 12px 0 5px;
-    -moz-border-radius: 2px 0 0 2px;
     border-radius: 2px 0 0 2px;
-    background: #DDD  no-repeat 100% 0;
+    background: #DDD  no-repeat 100% 0; 
+
   }
-  .breadcrumbs .current{
+  .xiaohang .current{
     color: #999;
     background-color: #FFF;
   }
   .entry-content{
     float: left;
-    width: 700px;  
+    width: 700px;
+    line-height: 1.6;   
   }
-  entry-content{
-    line-height: 1.6; 
-  }
+
   h1{
     font-size: 23px;
     font-weight: bold;
@@ -119,8 +144,10 @@
     color: #999;
   }
   .content-body{
-    font-size: 14px;
     margin-bottom: 20px;
+    font-size: 16px;
+    margin: 30px 0 20px;
+    font-weight: bold;
   }
   .entry-content p{
     padding-bottom: 20px;
@@ -132,11 +159,6 @@
     font-size: 16px;
     line-height: 1.6;
     margin: 30px 0 20px;
-  }
-  .content-body{
-    font-size: 16px;
-    margin: 30px 0 20px;
-    font-weight: bold;
   }
   img.chizi{
     float: right;
@@ -153,12 +175,14 @@
     font-size: 12px;
     line-height: 1.5;
   }
-  .category{ 
-    background-image: url(https://www.muji.net/lab/theme_illust_s_living.png)
-  }
+
   .category
   {
-    display: block;
+    background-image: url(https://www.muji.net/lab/theme_illust_s_living.png)/*设置背景图片*/
+  }
+  .category
+ {
+    display: block;  
     width: 133px;
     height: 133px;
     padding: 10px;
@@ -183,7 +207,7 @@
     line-height: 1.5;
   }
   .theme{
-    background-position: 0-126px;
+    background-position: 0-126px;  /*属性设置背景图像的起始位置。*/
   }
   .aside h2{
     font-weight: bold;
@@ -197,6 +221,10 @@
   
   .aside ul.Link li{
     margin-bottom: 4px;
+    cursor: pointer;
+  }
+  .aside ul.Link > li:hover{
+    color: brown;
   }
   li{
     list-style: none;
@@ -213,9 +241,7 @@
     padding: 0;
     border: 0;
   }
-  li{
-    list-style: none;
-  }
+
   .aside .data{
     font-size: 11px;
     color: #999;
@@ -223,8 +249,14 @@
   .aside .picture img{
     border: 1px solid #cccccc;
   }
+  .bodyfooter{
+    font-size: 12px;
+    line-height: 1.5;
+    height: 101px;
+  }
   .footer{
     line-height: 16px;
+    height: 101px;
   }
   .content, .footer{
     width: 880px;
@@ -234,9 +266,16 @@
   .pageend1{
     margin-top: 30px;
     border-bottom: 1px solid #666;
+    line-height: 0;
+    font-size: 0px;
+    height: 26px;
   }
   .pageend1 .end1{
     float: left;
+    width: 108px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 1.5;
   }
   .pageend1 li{
     margin-bottom: 10px;
@@ -245,7 +284,35 @@
   .pageend1 .endtop{
     float: right;
     font-size: 100%;
-  }
-  .endtop{
+    width: 58px;
+    height: 16px;
+    line-height: 1.5;
+    font-size: 12px;
     text-align: right;
   }
+  .footerend{
+    margin: 10px 0;
+  }
+  .footerend li{
+    float: left;
+    margin-right: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #ccc;
+    line-height: 13px;
+  }
+  .bodyfooter .two img{
+    width: 18px;
+    height: 12px;
+    border: 1px solid #CCC;
+    margin-right: 5px;
+  }
+  .footerend  .two{
+    float: right;
+  }
+  .footerend .three{
+    float: right;
+  }
+  .footerend .four{
+    float: right;
+  }
+
